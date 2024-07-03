@@ -40,6 +40,9 @@ module.exports = {
     yellow2: '#f9db49',
     yellow3: '##ffff84',
    },
+   backgroundImage: {
+    cabes: "url('/src/images/jpg/Cabes.jpg')",
+   },
   },
  },
  plugins: [],

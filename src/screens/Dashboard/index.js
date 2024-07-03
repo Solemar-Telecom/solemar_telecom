@@ -8,25 +8,27 @@ const Dashboard = () => {
  return (
   <div className='bg-primar/10'>
    <Header />
-   <div class='px-32 mb-11 flex flex-col gap-16'>
+   <div class='px-32 mb-11 flex flex-col gap-16 pt-32'>
     <div className='flex items-center gap-14'>
-     <img src={Cabes} style={{ width: '600px' }} />
-     <div className='flex flex-col gap-3'>
-      <p className='text-4xl font-bold'>Na Solemar Telecom, estamos ao seu lado em cada passo do caminho</p>
-      <p>
-       Proporcionando segurança, conectividade e energia tanto em casa quanto no trabalho. Confie em nossa experiência para manter sua vida e seus
-       negócios sempre conectados e protegidos.
-      </p>
-      <div className='flex justify-end'>
+     <img src={Cabes} className='w-[600px] rounded-md' />
+     <div className='flex flex-col gap-16 '>
+      <div className='flex flex-col gap-4'>
+       <p className='text-4xl font-bold'>Na Solemar Telecom, estamos ao seu lado em cada passo do caminho</p>
+       <p>
+        Proporcionando segurança, conectividade e energia tanto em casa quanto no trabalho. Confie em nossa experiência para manter sua vida e seus
+        negócios sempre conectados e protegidos.
+       </p>
+      </div>
+      <div className='flex justify-start'>
        <Button name='Saber mais' width={'w-1/2'} height={'h-12'} textColor={'text-white'} backgroundColor={'bg-primar'} type='submit' />
       </div>
      </div>
     </div>
     <div className='flex flex-col gap-4'>
      <p className='text-3xl font-bold '>Onde você pode utilizar nossos serviços ?</p>
-     <ul className='flex items-center'>
-      <li className='relative bg-slate-900 w-1/4 h-80 hover:w-2/4 duration-1000 cursor-pointer'>
-       <img src={Cabes} className='w-full h-full object-cover' />
+     <ul className='flex items-center rounded-md'>
+      <li className='relative bg-slate-900 w-1/4 h-80 hover:w-2/4 duration-1000 cursor-pointer rounded-tl-md rounded-bl-md'>
+       <img src={Cabes} className='w-full h-full object-cover rounded-tl-md rounded-bl-md' />
        <div className='flex items-center p-3 absolute bottom-0 bg-black/50 w-full h-1/3'>
         <p className='text-2xl font-medium text-white'>Condomínios</p>
        </div>
@@ -43,8 +45,8 @@ const Dashboard = () => {
         <p className='text-2xl font-medium text-white'>Grandes empresas ou projtos</p>
        </div>
       </li>
-      <li className='relative bg-slate-900 w-1/4 h-80 hover:w-2/4 duration-1000 cursor-pointer'>
-       <img src={Cabes} className='w-full h-full object-cover' />
+      <li className='relative bg-slate-900 w-1/4 h-80 hover:w-2/4 duration-1000 cursor-pointer rounded-tr-md rounded-br-md'>
+       <img src={Cabes} className='w-full h-full object-cover rounded-tr-md rounded-br-md' />
        <div className='flex items-center p-3 absolute bottom-0 bg-black/50 w-full h-1/3'>
         <p className='text-2xl font-medium text-white'>Agronegócio</p>
        </div>
@@ -65,29 +67,25 @@ const Dashboard = () => {
      </div>
      <div className='flex flex-col gap-3'>
       <div className='flex gap-3'>
-       <div className='relative bg-slate-900 w-3/4 h-80 duration-1000 cursor-pointer'>
-        <img src={Cabes} className='w-full h-full object-cover' />
-        <div className='w-full h-full flex items-center justify-center absolute bottom-0 hover:bg-black/50 duration-1000 '>
+       <div className=' flex w-3/4 h-80 cursor-pointer bg-cabes bg-cover bg-center rounded-md'>
+        <div className='w-full h-full flex items-center justify-center hover:bg-black/50 duration-1000 rounded-md'>
          <p className='text-4xl font-bold text-white'>CONTROLE DE ACESSO</p>
         </div>
        </div>
-       <div className='relative bg-slate-900 w-1/4 h-80 duration-1000 cursor-pointer'>
-        <img src={Cabes} className='w-full h-full object-cover' />
-        <div className='w-full h-full flex items-center justify-center absolute bottom-0 hover:bg-black/50 duration-1000 '>
+       <div className=' flex w-1/4 h-80 cursor-pointer bg-cabes bg-cover bg-center rounded-md'>
+        <div className='w-full h-full flex items-center justify-center hover:bg-black/50 duration-1000 rounded-md'>
          <p className='text-4xl font-bold text-white'>REDES</p>
         </div>
        </div>
       </div>
       <div className='flex gap-3'>
-       <div className='relative bg-slate-900 w-1/4 h-80 duration-1000 cursor-pointer'>
-        <img src={Cabes} className='w-full h-full object-cover' />
-        <div className='w-full h-full flex items-center justify-center absolute bottom-0 hover:bg-black/50 duration-1000 '>
+       <div className=' flex w-1/4 h-80 cursor-pointer bg-cabes bg-cover bg-center rounded-md'>
+        <div className='w-full h-full flex items-center justify-center hover:bg-black/50 duration-1000 rounded-md'>
          <p className='text-4xl font-bold text-white'>CÂMERAS</p>
         </div>
        </div>
-       <div className='relative bg-slate-900 w-3/4 h-80 duration-1000 cursor-pointer'>
-        <img src={Cabes} className='w-full h-full object-cover' />
-        <div className='w-full h-full flex items-center justify-center absolute bottom-0 hover:bg-black/50 duration-1000 '>
+       <div className=' flex w-3/4 h-80 cursor-pointer bg-cabes bg-cover bg-center rounded-md'>
+        <div className='w-full h-full flex items-center justify-center hover:bg-black/50 duration-1000 rounded-md'>
          <p className='text-4xl font-bold text-white'>ENERGIA SOLAR</p>
         </div>
        </div>
