@@ -42,6 +42,9 @@ module.exports = {
    },
    backgroundImage: {
     cabes: "url('/src/images/jpg/Cabes.jpg')",
+    condon: "url('/src/images/jpg/Condon.jpg')",
+    companies: "url('/src/images/jpg/Companies.jpg')",
+    energy: "url('/src/images/jpg/Energy.jpeg')",
    },
   },
  },

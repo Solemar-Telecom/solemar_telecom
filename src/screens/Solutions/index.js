@@ -7,31 +7,34 @@ const Solutions = () => {
  return (
   <div className='bg-primar/10'>
    <Header />
-   <div class='px-32 pb-11 flex flex-col gap-16 pt-32'>
-    <p className='text-4xl font-bold'>Soluções</p>
-    <div className='flex flex-col gap-20'>
+   <div class='flex flex-col gap-16 pt-32'>
+    <p className='text-4xl font-bold flex justify-center'>S O L U Ç Õ E S</p>
+    <div className='flex flex-col'>
      <Card
       type={1}
       image={'cabes'}
       title='Condomínios'
       text='Entendemos as necessidades específicas dos condomínios em termos de segurança, conectividade e eficiência. Por isso, oferecemos uma gama de soluções integradas que proporcionam tranquilidade e comodidade para todos os moradores e administradores.'
+      url='/solutions/condos'
      />
      <Card
       image={'cabes'}
-      title='Pequenas e Médias Empresas'
+      title='Empresas'
       text='Desafios únicos que as pequenas empresas enfrentam e oferecemos soluções tecnológicas sob medida para ajudá-las a crescer e prosperar. Nosso compromisso é fornecer serviços de alta qualidade que impulsionem sua eficiência, segurança e conectividade.'
+      url='/solutions/companies'
      />
      <Card
       type={1}
       image={'cabes'}
-      title='Grandes Empresas'
-      text='Sabemos que grandes empresas enfrentam desafios complexos e exigem soluções tecnológicas robustas e personalizadas. Oferecemos uma gama de serviços que atendem às necessidades específicas de grandes organizações, garantindo segurança, eficiência e conectividade de alta qualidade.'
+      title='Energia'
+      text='Oferecemos soluções inovadoras em energia sustentável que ajudam a reduzir custos e o impacto ambiental. Nossas tecnologias de ponta garantem eficiência energética e fornecimento confiável para diversas necessidades, desde residências até grandes empresas e propriedades rurais.'
+      url='/solutions/energy'
      />
-     <Card
+     {/* <Card
       image={'cabes'}
       title='Agronegócio'
       text='A importância do agronegócio e os desafios únicos que esse setor enfrenta. Oferecemos soluções tecnológicas avançadas para aumentar a eficiência, segurança e sustentabilidade das operações agrícolas, ajudando a maximizar a produtividade e a rentabilidade.'
-     />
+     /> */}
     </div>
    </div>
    <Footer />

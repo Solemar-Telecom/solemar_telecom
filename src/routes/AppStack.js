@@ -3,6 +3,9 @@ import { Routes, Route, BrowserRouter as Router, Navigate } from 'react-router-d
 
 import Dashboard from '../screens/Dashboard';
 import Solutions from '../screens/Solutions';
+import Condos from '../screens/Condos';
+import Companies from '../screens/Companies';
+import Energy from '../screens/Energy';
 
 const AppStack = () => {
  return (
@@ -10,6 +13,9 @@ const AppStack = () => {
    <Routes>
     <Route path='/home' element={<Dashboard />} />
     <Route path='/solutions' element={<Solutions />} />
+    <Route path='/solutions/condos' element={<Condos />} />
+    <Route path='/solutions/companies' element={<Companies />} />
+    <Route path='/solutions/energy' element={<Energy />} />
     <Route path='*' element={<Navigate to='/home' />} />
    </Routes>
   </Router>
