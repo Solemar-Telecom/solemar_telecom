@@ -45,6 +45,7 @@ module.exports = {
     condon: "url('/src/images/jpg/Condon.jpg')",
     companies: "url('/src/images/jpg/Companies.jpg')",
     energy: "url('/src/images/jpg/Energy.jpeg')",
+    aboutus: "url('/src/images/jpg/AboutUs.jpg')",
    },
   },
  },

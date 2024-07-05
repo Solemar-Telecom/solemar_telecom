@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Logo from '../Logo';
 import Button from '../Button';
@@ -22,7 +22,7 @@ const Header = () => {
 
  return (
   <div
-   class={`w-full h-20 px-32 mb-14 py-3 flex items-center justify-between gap-36 rounded-b-2xl fixed z-20 ${scrollHeight > 40 && 'opacity-65'} bg-secondar hover:bg-secondar duration-700`}
+   className={`w-full h-20 px-32 mb-14 py-3 flex items-center justify-between gap-36 rounded-b-2xl fixed z-30 ${scrollHeight > 40 && 'opacity-65'} bg-secondar hover:opacity-100 duration-700`}
   >
    <div
     className='cursor-pointer w-96 flex justify-center'
@@ -34,31 +34,28 @@ const Header = () => {
    </div>
    <div className='w-full flex items-center justify-center'>
     <div class='w-[500px] flex items-center justify-between px-10 py-2 rounded-full'>
-     <div class='flex items-center justify-center hover:border-b-2'>
-      <p
-       class='text-white font-medium cursor-pointer text-lg hover:text-xl  py-1 rounded-full duration-200'
-       onClick={() => {
-        navigate('/home');
-       }}
-      >
-       Home
-      </p>
+     <div
+      class='flex items-center justify-center hover:border-b-2'
+      onClick={() => {
+       navigate('/home');
+      }}
+     >
+      <p class='text-white font-medium cursor-pointer text-lg hover:text-xl  py-1 rounded-full duration-200'>Home</p>
      </div>
-     <div class='flex items-center justify-center hover:border-b-2'>
-      <p
-       class='text-white font-medium cursor-pointer text-lg hover:text-xl  py-1 rounded-full duration-200'
-       onClick={() => {
-        navigate('/solutions');
-       }}
-      >
-       Soluções
-      </p>
+     <div
+      class='flex items-center justify-center hover:border-b-2'
+      onClick={() => {
+       navigate('/solutions');
+      }}
+     >
+      <p class='text-white font-medium cursor-pointer text-lg hover:text-xl  py-1 rounded-full duration-200'>Soluções</p>
      </div>
-     <div class=' flex items-center justify-center hover:border-b-2'>
-      <p class='text-white font-medium cursor-pointer text-lg hover:text-xl  py-1 rounded-full duration-200'>Produtos</p>
-     </div>
-
-     <div class='flex items-center justify-center hover:border-b-2'>
+     <div
+      class='flex items-center justify-center hover:border-b-2'
+      onClick={() => {
+       navigate('/aboutus');
+      }}
+     >
       <p class='text-white font-medium cursor-pointer text-lg hover:text-xl py-1 rounded-full duration-200'>Sobre nós</p>
      </div>
     </div>
