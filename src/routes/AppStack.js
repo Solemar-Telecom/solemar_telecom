@@ -7,6 +7,7 @@ import Condos from '../screens/Condos';
 import Companies from '../screens/Companies';
 import Energy from '../screens/Energy';
 import AboutUs from '../screens/AboutUs';
+import Contact from '../screens/Contact';
 
 const AppStack = () => {
  return (
@@ -18,6 +19,7 @@ const AppStack = () => {
     <Route path='/solutions/companies' element={<Companies />} />
     <Route path='/solutions/energy' element={<Energy />} />
     <Route path='/aboutus' element={<AboutUs />} />
+    <Route path='/contact' element={<Contact />} />
     <Route path='*' element={<Navigate to='/home' />} />
    </Routes>
   </Router>

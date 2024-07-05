@@ -61,7 +61,17 @@ const Header = () => {
     </div>
    </div>
    <div className='w-48'>
-    <Button name='Entre em contato' width={'w-48'} height={'h-12'} textColor={'text-white'} backgroundColor={'bg-primar'} type='submit' />
+    <Button
+     name='Entre em contato'
+     width={'w-48'}
+     height={'h-12'}
+     textColor={'text-white'}
+     backgroundColor={'bg-primar'}
+     type='submit'
+     onClick={() => {
+      navigate('/contact');
+     }}
+    />
    </div>
   </div>
  );

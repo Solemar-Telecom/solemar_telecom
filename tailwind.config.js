@@ -46,6 +46,8 @@ module.exports = {
     companies: "url('/src/images/jpg/Companies.jpg')",
     energy: "url('/src/images/jpg/Energy.jpeg')",
     aboutus: "url('/src/images/jpg/AboutUs.jpg')",
+    contact: "url('/src/images/jpg/Contact.jpg')",
+    form: "url('/src/images/jpg/Form.jpg')",
    },
   },
  },
