@@ -3,12 +3,14 @@ import Button from '../../components/Button';
 
 import Cabes from '../../images/jpg/Cabes.jpg';
 import Footer from '../../components/Footer';
+import Carousel from '../../components/Carousel';
 
 const Dashboard = () => {
  return (
   <div className='bg-primar/10'>
    <Header />
    <div class='px-32 mb-11 flex flex-col gap-16 pt-32'>
+    <Carousel />
     <div className='flex items-center gap-14'>
      <img src={Cabes} className='w-[600px] rounded-md' />
      <div className='flex flex-col gap-16 '>
