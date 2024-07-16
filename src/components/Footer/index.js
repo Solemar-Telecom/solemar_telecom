@@ -14,7 +14,8 @@ const Footer = () => {
    <div>
     <p className='text-sm text-border'>Contatos</p>
     <div className='py-1'>
-     <p>+55 (11)981467352</p>
+     <p>+55 (11) 981467352</p>
+     <p>+55 (11) 4171-9954</p>
      <p>solemarti@mail.com</p>
     </div>
    </div>
