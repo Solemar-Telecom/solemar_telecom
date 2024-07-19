@@ -7,7 +7,7 @@ const Carousel = ({ image1, image2, div2, image3, div3 }) => {
  const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
