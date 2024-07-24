@@ -10,7 +10,7 @@ const Carousel = ({ image1, image2, div2, image3, div3 }) => {
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  //   autoplay: true,
   autoplaySpeed: 3000,
   pauseOnHover: true,
   arrows: false,
@@ -20,7 +20,7 @@ const Carousel = ({ image1, image2, div2, image3, div3 }) => {
   <Slider {...settings}>
    <div className='h-96 rounded-l-md bg-primar/80'>
     <div className='flex flex-row h-full w-full'>
-     <div className='w-2/3 h-full bg-cabes bg-cover bg-center rounded-r-[170px]' />
+     <div className='w-2/3 h-full bg-cabes2 bg-cover bg-center rounded-r-[170px]' />
      <div className='w-1/3 pl-9 p-10 flex flex-col gap-3 justify-center items-center'>
       <p className='text-2xl font-bold text-white'>Estamos a mais de 28 anos no mercado de tecnologia</p>
       <p className='font-medium text-white'>
@@ -39,7 +39,7 @@ const Carousel = ({ image1, image2, div2, image3, div3 }) => {
        conectividade e eficiência para nossos clientes.
       </p>
      </div>
-     <div className='w-2/3 h-full bg-cabes bg-cover bg-center rounded-l-[170px]' />
+     <div className='w-2/3 h-full bg-equipment bg-cover bg-center rounded-l-[170px]' />
     </div>
    </div>
   </Slider>

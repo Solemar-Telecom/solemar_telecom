@@ -12,20 +12,20 @@ const Solutions = () => {
     <div className='flex flex-col'>
      <Card
       type={1}
-      image={'cabes'}
+      image={'condon'}
       title='Condomínios'
       text='Entendemos as necessidades específicas dos condomínios em termos de segurança, conectividade e eficiência. Por isso, oferecemos uma gama de soluções integradas que proporcionam tranquilidade e comodidade para todos os moradores e administradores.'
       url='/solutions/condos'
      />
      <Card
-      image={'cabes'}
+      image={'companies'}
       title='Empresas'
       text='Desafios únicos que as pequenas empresas enfrentam e oferecemos soluções tecnológicas sob medida para ajudá-las a crescer e prosperar. Nosso compromisso é fornecer serviços de alta qualidade que impulsionem sua eficiência, segurança e conectividade.'
       url='/solutions/companies'
      />
      <Card
       type={1}
-      image={'cabes'}
+      image={'energy'}
       title='Energia'
       text='Oferecemos soluções inovadoras em energia sustentável que ajudam a reduzir custos e o impacto ambiental. Nossas tecnologias de ponta garantem eficiência energética e fornecimento confiável para diversas necessidades, desde residências até grandes empresas e propriedades rurais.'
       url='/solutions/energy'
