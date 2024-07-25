@@ -1,5 +1,4 @@
-import { BsInstagram, BsLinkedin } from 'react-icons/bs';
-import { FaFacebook } from 'react-icons/fa';
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import Logo from '../Logo';
 
 const Footer = () => {
@@ -14,17 +13,49 @@ const Footer = () => {
    <div>
     <p className='text-sm text-border'>Contatos</p>
     <div className='py-1'>
-     <p>+55 (11) 981467352</p>
-     <p>+55 (11) 4171-9954</p>
-     <p>solemarti@mail.com</p>
+     <p
+      className='cursor-pointer'
+      onClick={() => {
+       navigator.clipboard.writeText('(11)981467352');
+      }}
+     >
+      +55 (11)981467352
+     </p>
+     <p
+      className='cursor-pointer'
+      onClick={() => {
+       navigator.clipboard.writeText('(11)981467352');
+      }}
+     >
+      +55 (11)4171-9954
+     </p>
+     <p
+      className='cursor-pointer'
+      onClick={() => {
+       navigator.clipboard.writeText('mailto:solemarti@mail.com.com?subject=Assunto%20do%20Email&body=Corpo%20do%20Email');
+      }}
+     >
+      solemarti@mail.com
+     </p>
     </div>
    </div>
    <div>
     <p className='text-sm text-border'>Redeis Sociais</p>
-    <div className='py-3 flex gap-2 items-center justify-center'>
-     <BsInstagram className='text-2xl cursor-pointer' />
-     <FaFacebook className='text-2xl cursor-pointer' />
-     <BsLinkedin className='text-2xl cursor-pointer' />
+    <div className='py-3 flex gap-3 items-center justify-center'>
+     <BsInstagram
+      className='text-2xl cursor-pointer'
+      onClick={() => {
+       window.open('https://www.instagram.com/solemartelecom/');
+      }}
+     />
+     <BsWhatsapp
+      className='text-2xl cursor-pointer'
+      onClick={() => {
+       window.open(
+        'https://wa.me/5511981467352?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%2C%20por%20favor.',
+       );
+      }}
+     />
     </div>
    </div>
    <Logo width={120} />

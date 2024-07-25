@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -11,14 +12,31 @@ const Contact = () => {
   handleSubmit,
   control,
   formState: { errors },
+  reset,
  } = useForm({
   defaultValues: {
+   name: '',
    email: '',
-   password: '',
+   celphone: '',
+   CEP: '',
+   city: '',
+   state: '',
+   subject: '',
+   message: '',
   },
  });
 
- const postForm = (data) => {};
+ const postForm = async (data) => {
+  try {
+   const result = await emailjs.send('service_mdsivmj', 'template_xmcl3ol', data, 'qppAHpd1ZuuG2QJ19');
+   console.log('Email sent successfully:', result.text);
+   reset();
+   // Aqui você pode adicionar uma mensagem de sucesso ou redirecionar o usuário
+  } catch (error) {
+   console.log('Error sending email:', error.text);
+   // Aqui você pode adicionar uma mensagem de erro ou lógica para lidar com falhas
+  }
+ };
 
  return (
   <div className='bg-primar/10'>
@@ -65,8 +83,8 @@ const Contact = () => {
         rules={{
          required: 'Campo obrigatório!',
          pattern: {
-          value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
-          message: 'E-mail inválido!',
+          value: /^\(?\d{2}\)?\s?9\d{4}-?\d{4}$/,
+          message: 'Numero inválido!',
          },
         }}
         error={errors.celphone}
