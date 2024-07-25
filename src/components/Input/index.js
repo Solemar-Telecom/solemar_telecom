@@ -20,9 +20,10 @@ const Input = ({ label, name, control, rules, placeholder, error, mask, disabled
       disabled={disabled}
       autoComplete='off'
       className={`
-            text-sm mb-2 font-medium w-full pl-3 rounded-2xl border-1 bg-offWhite
+            text-smfont-medium w-full pl-3 rounded-2xl border-1 bg-offWhite outline-none
             ${height ? height : 'h-12'}
             ${error ? 'border-red1' : 'border-border'}
+        
             `}
      />
     )}
@@ -41,7 +42,7 @@ const Input = ({ label, name, control, rules, placeholder, error, mask, disabled
       disabled={disabled}
       autoComplete='off'
       className={`
-        text-sm mb-2 font-medium w-full pl-3 rounded-xl border-1 bg-offWhite
+        text-sm font-medium w-full pl-3 rounded-xl border-1 bg-offWhite outline-none
         ${height ? height : 'h-12'}
         ${error ? 'border-red1' : 'border-border'}
         `}

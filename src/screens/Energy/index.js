@@ -19,7 +19,7 @@ const Energy = () => {
    </div>
    <div className='flex items-center'>
     <div
-     className='w-1/2 h-96 flex items-end justify-center'
+     className='w-1/2 h-96 flex items-end justify-center bg-solar2 bg-cover bg-center'
      onMouseEnter={() => {
       setIntercom(true);
      }}
@@ -39,7 +39,7 @@ const Energy = () => {
      </div>
     </div>
     <div
-     className='w-1/2 h-96 flex items-end justify-center'
+     className='w-1/2 h-96 flex items-end justify-center bg-changer bg-cover bg-top'
      onMouseEnter={() => {
       setCam(true);
      }}

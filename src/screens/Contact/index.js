@@ -24,14 +24,14 @@ const Contact = () => {
   <div className='bg-primar/10'>
    <Header />
    <div className='bg-form bg-cover bg-center'>
-    <div className='h-96 flex flex-col justify-center items-start gap-16 pt-16'>
+    <div className='h-60 flex flex-col justify-center items-start gap-16 pt-16'>
      <div className='h-full w-full flex items-center justify-start pl-32 pt-4 bg-black/50 rounded-sm'>
       <p className='text-white text-4xl font-bold'>Estamos aqui para te ajudar</p>
      </div>
     </div>
     <div className='py-14 px-32 flex gap-10'>
      <div className='w-1/2'></div>
-     <form onSubmit={handleSubmit(postForm)} className='flex flex-col items-center w-1/2 bg-white/50 p-5 rounded-md'>
+     <form onSubmit={handleSubmit(postForm)} className='flex flex-col items-center p-4 w-1/2 bg-white/50  rounded-md'>
       <Input
        label='Nome Completo'
        name='name'
@@ -125,9 +125,7 @@ const Contact = () => {
        }}
        error={errors.message}
       />
-      <div className='w-full pt-12'>
-       <Button name='Login' width={'w-full'} height={'h-12'} textColor={'text-white'} backgroundColor={'bg-primar'} type='submit' />
-      </div>
+      <Button name='Login' width={'w-full'} height={'h-12'} textColor={'text-white'} backgroundColor={'bg-primar'} type='submit' />
      </form>
     </div>
    </div>

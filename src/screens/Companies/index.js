@@ -19,7 +19,7 @@ const Companies = () => {
    </div>
    <div className='flex items-center'>
     <div
-     className='w-1/4 h-96 flex items-end justify-center'
+     className='w-1/4 h-96 flex items-end justify-center bg-clound bg-cover bg-center'
      onMouseEnter={() => {
       setIntercom(true);
      }}
@@ -27,7 +27,7 @@ const Companies = () => {
       setIntercom(false);
      }}
     >
-     <div className={`w-full ${intercom ? 'h-full' : 'h-1/4'} bg-primar flex items-center justify-center px-5 duration-500`}>
+     <div className={`w-full ${intercom ? 'h-full' : 'h-1/4'} bg-primar flex items-center justify-center px-5 duration-500 `}>
       {intercom ? (
        <p className='text-white text-lg text-center'>
         Modernize sua comunicação com nossas soluções de telefonia em nuvem. Proporcionamos chamadas de alta qualidade, flexibilidade e integração com
@@ -39,7 +39,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center'
+     className='w-1/4 h-96 flex items-end justify-center bg-cabes3 bg-cover bg-center'
      onMouseEnter={() => {
       setCam(true);
      }}
@@ -79,7 +79,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center'
+     className='w-1/4 h-96 flex items-end justify-center bg-digitalLock bg-cover bg-center'
      onMouseEnter={() => {
       setControl(true);
      }}
