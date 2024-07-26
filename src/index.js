@@ -7,6 +7,7 @@ import AppStack from './routes/AppStack';
 import GlobalProvider from './context/GlobalContext';
 
 import './index.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

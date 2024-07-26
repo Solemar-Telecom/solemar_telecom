@@ -1,11 +1,13 @@
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import { Slide, toast } from 'react-toastify';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Input from '../../components/Input';
 import InputXL from '../../components/InputXL';
 import Button from '../../components/Button';
+import { useEffect, useState } from 'react';
 
 const Contact = () => {
  const {
@@ -26,17 +28,64 @@ const Contact = () => {
   },
  });
 
+ const [load, setLoad] = useState(false);
+ const [disabled, setDisabled] = useState(false);
+ const [score, setScore] = useState(0);
+
  const postForm = async (data) => {
+  setLoad(true);
+  setDisabled(true);
+
   try {
-   const result = await emailjs.send('service_mdsivmj', 'template_xmcl3ol', data, 'qppAHpd1ZuuG2QJ19');
-   console.log('Email sent successfully:', result.text);
+   await emailjs.send('service_mdsivmj', 'template_xmcl3ol', data, 'qppAHpd1ZuuG2QJ19');
+   toast.success('Seu formulário foi enviado para o nosso email!', {
+    position: 'top-right',
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: 'light',
+    transition: Slide,
+   });
    reset();
-   // Aqui você pode adicionar uma mensagem de sucesso ou redirecionar o usuário
+   setScore(score + 1);
+   setLoad(false);
+   setDisabled(false);
   } catch (error) {
-   console.log('Error sending email:', error.text);
-   // Aqui você pode adicionar uma mensagem de erro ou lógica para lidar com falhas
+   toast.error('Problemas ao enviar o seu formulário!', {
+    position: 'top-right',
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: 'light',
+    transition: Slide,
+   });
+   setLoad(false);
+   setDisabled(false);
   }
  };
+
+ useEffect(() => {
+  if (score > 2) {
+   setDisabled(true);
+   toast.warn('Limite de envios atingido!', {
+    position: 'top-right',
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: 'light',
+    transition: Slide,
+   });
+  }
+ }, [score]);
 
  return (
   <div className='bg-primar/10'>
@@ -143,7 +192,16 @@ const Contact = () => {
        }}
        error={errors.message}
       />
-      <Button name='Login' width={'w-full'} height={'h-12'} textColor={'text-white'} backgroundColor={'bg-primar'} type='submit' />
+      <Button
+       name='Login'
+       disabled={disabled}
+       loading={load}
+       width={'w-full'}
+       height={'h-12'}
+       textColor={'text-white'}
+       backgroundColor={'bg-primar'}
+       type='submit'
+      />
      </form>
     </div>
    </div>

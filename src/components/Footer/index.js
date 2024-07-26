@@ -1,7 +1,23 @@
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { Slide, toast } from 'react-toastify';
+
 import Logo from '../Logo';
 
 const Footer = () => {
+ const playToast = (text) => {
+  toast.success(text, {
+   position: 'top-right',
+   autoClose: 5000,
+   hideProgressBar: false,
+   closeOnClick: true,
+   pauseOnHover: true,
+   draggable: true,
+   progress: undefined,
+   theme: 'light',
+   transition: Slide,
+  });
+ };
+
  return (
   <div className='w-full h-40 bg-secondar px-32 text-white flex items-start justify-between pt-6'>
    <div className='w-64 flex flex-col gap-2'>
@@ -17,6 +33,7 @@ const Footer = () => {
       className='cursor-pointer'
       onClick={() => {
        navigator.clipboard.writeText('(11)981467352');
+       playToast('Número copiado!');
       }}
      >
       +55 (11)981467352
@@ -25,6 +42,7 @@ const Footer = () => {
       className='cursor-pointer'
       onClick={() => {
        navigator.clipboard.writeText('(11)981467352');
+       playToast('Número copiado!');
       }}
      >
       +55 (11)4171-9954
@@ -32,10 +50,12 @@ const Footer = () => {
      <p
       className='cursor-pointer'
       onClick={() => {
-       navigator.clipboard.writeText('mailto:solemarti@mail.com.com?subject=Assunto%20do%20Email&body=Corpo%20do%20Email');
+       //    window.location.href = 'mailto:marcio@solemarti.com.br?subject=Assunto%20do%20Email&body=Corpo%20do%20Email';
+       navigator.clipboard.writeText('marcio@solemarti.com.br');
+       playToast('Email copiado!');
       }}
      >
-      solemarti@mail.com
+      marcio@solemarti.com.br
      </p>
     </div>
    </div>

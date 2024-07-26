@@ -1,4 +1,6 @@
-const Button = ({ name, disabled, onClick, type, width, height, backgroundColor, border, textColor, fontSize }) => {
+import Loading from '../../images/gif/Loading.gif';
+
+const Button = ({ name, disabled, loading, onClick, type, width, height, backgroundColor, border, textColor, fontSize }) => {
  return (
   <button
    className={`
@@ -14,7 +16,13 @@ const Button = ({ name, disabled, onClick, type, width, height, backgroundColor,
    onClick={onClick}
    type={type}
   >
-   {name}
+   {loading ? (
+    <div className='w-full h-full flex items-center justify-center'>
+     <img src={Loading} alt='Loading' width={'40px'} />
+    </div>
+   ) : (
+    name
+   )}
   </button>
  );
 };
