@@ -37,7 +37,7 @@ const Contact = () => {
   setDisabled(true);
 
   try {
-   await emailjs.send('service_mdsivmj', 'template_xmcl3ol', data, 'qppAHpd1ZuuG2QJ19');
+   await emailjs.send('service_emtnv5f', 'template_xmcl3ol', data, 'qppAHpd1ZuuG2QJ19');
    toast.success('Seu formulário foi enviado para o nosso email!', {
     position: 'top-right',
     autoClose: 5000,
