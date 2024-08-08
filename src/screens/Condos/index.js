@@ -19,7 +19,7 @@ const Condos = () => {
    </div>
    <div className='flex items-center'>
     <div
-     className='w-1/4 h-96 flex items-end justify-center bg-lock bg-cover bg-center'
+     className='w-1/4 h-96 flex items-end justify-center bg-faceRander bg-cover bg-center'
      onMouseEnter={() => {
       setControl(true);
      }}

@@ -59,7 +59,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center'
+     className='w-1/4 h-96 flex items-end justify-center bg-fleet bg-cover bg-center'
      onMouseEnter={() => {
       setSoftware(true);
      }}
@@ -79,7 +79,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center bg-digitalLock bg-cover bg-center'
+     className='w-1/4 h-96 flex items-end justify-center bg-faceRander2 bg-cover bg-center'
      onMouseEnter={() => {
       setControl(true);
      }}

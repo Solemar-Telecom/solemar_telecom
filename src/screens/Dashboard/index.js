@@ -96,7 +96,7 @@ const Dashboard = () => {
      <div className='flex flex-col gap-3'>
       <div className='flex gap-3'>
        <div
-        className=' flex w-3/4 h-80 cursor-pointer bg-locks bg-cover bg-center rounded-md'
+        className=' flex w-3/4 h-80 cursor-pointer bg-facesRanders bg-cover bg-center rounded-md'
         onClick={() => {
          navigate('/solutions/condos');
         }}
