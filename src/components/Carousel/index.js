@@ -12,7 +12,7 @@ const Carousel = ({ image1, image2, div2, image3, div3 }) => {
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
-  //   autoplay: true,
+  autoplay: true,
   autoplaySpeed: 3000,
   pauseOnHover: true,
   arrows: false,
