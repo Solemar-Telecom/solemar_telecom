@@ -4,7 +4,6 @@ const Logo = ({ width }) => {
  return (
   <div>
    <img src={LogoImage} style={{ width: width }} />
-   {/* <p>SOLEMAR</p> */}
   </div>
  );
 };
