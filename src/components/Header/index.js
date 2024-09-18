@@ -24,18 +24,18 @@ const Header = () => {
 
  return (
   <div
-   className={`w-full h-20 px-32 max-md:px-9 mb-14 py-3 max-md:py-1 flex items-center justify-between rounded-b-2xl fixed z-30 ${scrollHeight > 40 && 'opacity-65'} bg-secondar md:hover:opacity-100 duration-700`}
+   className={`w-full h-20 px-32 max-md:px-2 mb-14 py-3 max-md:py-1 flex items-center justify-between rounded-b-2xl fixed z-30 ${scrollHeight > 40 && 'opacity-65'} bg-secondar md:hover:opacity-100 duration-700`}
   >
    <div
-    className='cursor-pointer w-96 max-md:w-16 h-full flex justify-center'
+    className='cursor-pointer w-96 max-md:w-16 h-full flex justify-center max-md:hidden'
     onClick={() => {
      navigate('/home');
     }}
    >
-    <img src={LogoImage} className='max-md:w-full md:h-full' />
+    <img src={LogoImage} className='h-full' />
    </div>
    <div className='w-full flex items-center justify-center'>
-    <div class='flex items-center gap-16 max-md:gap-4 px-10 py-2 rounded-full'>
+    <div class='flex items-center gap-16 max-md:gap-4 px-10 max-md:px-0 py-2 rounded-full'>
      <div
       class='flex items-center justify-center md:hover:border-b-2'
       onClick={() => {
