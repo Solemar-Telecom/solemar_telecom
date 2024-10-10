@@ -54,7 +54,7 @@ const Dashboard = () => {
       >
        <img src={Condominium} className='w-full h-full object-cover rounded-tl-md rounded-bl-md' />
        <div className='flex items-center p-3 absolute bottom-0 bg-black/50 w-full h-1/3'>
-        <p className='text-2xl max-md:text-sm font-medium text-white'>Condomínios</p>
+        <p className='text-2xl max-md:text-xs font-medium text-white'>Condomínios</p>
        </div>
       </li>
       <li
@@ -65,7 +65,7 @@ const Dashboard = () => {
       >
        <img src={Company} className='w-full h-full object-cover' />
        <div className='flex items-center p-3 absolute bottom-0 bg-black/50 w-full h-1/3'>
-        <p className='text-2xl max-md:text-sm font-medium text-white'>Empresas</p>
+        <p className='text-2xl max-md:text-xs font-medium text-white'>Empresas</p>
        </div>
       </li>
       <li
@@ -76,7 +76,7 @@ const Dashboard = () => {
       >
        <img src={SolarEnergy} className='w-full h-full object-cover rounded-tr-md rounded-br-md' />
        <div className='flex items-center p-3 absolute bottom-0 bg-black/50 w-full h-1/3'>
-        <p className='text-2xl max-md:text-sm font-medium text-white'>Energia</p>
+        <p className='text-2xl max-md:text-xs font-medium text-white'>Energia</p>
        </div>
       </li>
      </ul>
