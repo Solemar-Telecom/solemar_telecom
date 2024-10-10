@@ -16,7 +16,7 @@ const Dashboard = () => {
  return (
   <div className='bg-primar/10'>
    <Header />
-   <div class='px-32 max-md:px-10 mb-11 flex flex-col gap-16 pt-32'>
+   <div class='px-32 max-md:px-5 mb-11 flex flex-col gap-16 pt-32 max-md:pt-24'>
     <Carousel text1='Estamos a mais de 28 anos no mercado de tecnologia, atendendo com a melhor qualidade e atenção necessária para a satisfação de nossos clientes, sejam eles residenciais, empresas ou condomínios.' />
     <div className='flex items-center gap-14'>
      <img src={Lok} className='h-[500px] rounded-md max-md:hidden' />
