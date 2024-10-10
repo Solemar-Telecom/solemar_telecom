@@ -10,9 +10,9 @@ const AboutUs = () => {
      <p className='text-white text-4xl font-bold flex justify-center'>Solemar Telecom</p>
     </div>
    </div>
-   <div className='py-14 px-32 flex flex-col gap-5'>
+   <div className='py-14 max-md:py-5 px-32 max-md:px-5 flex flex-col gap-5'>
     <div className='flex flex-col gap-2'>
-     <p className='text-3xl font-bold text-primar'>Quem somos?</p>
+     <p className='text-3xl max-md:text-2xl font-bold text-primar'>Quem somos?</p>
      <p className='text-lg'>
       Há mais de 28 anos, atuamos na área de tecnologia, sempre buscando agregar soluções inovadoras ao nosso portfólio. Desde nossa fundação em 1996,
       temos nos dedicado a fornecer aos nossos clientes um parceiro com profundo conhecimento em diversas soluções tecnológicas. Começamos como uma
@@ -20,7 +20,7 @@ const AboutUs = () => {
      </p>
     </div>
     <div className='flex flex-col gap-2'>
-     <p className='text-3xl font-bold text-primar'>O que fazemos?</p>
+     <p className='text-3xl max-md:text-2xl font-bold text-primar'>O que fazemos?</p>
      <p className='text-lg'>
       Com o surgimento de novas demandas, ampliamos nossa expertise para as áreas de rede e segurança eletrônica. Atualmente, temos uma parceria
       sólida com a Intelbrás, que nos permite oferecer soluções tecnológicas abrangentes para voz, dados, imagens, controle de acesso, energia solar,
@@ -29,7 +29,7 @@ const AboutUs = () => {
      </p>
     </div>
     <div className='flex flex-col gap-2'>
-     <p className='text-3xl font-bold text-primar'>Onde estamos?</p>
+     <p className='text-3xl max-md:text-2xl font-bold text-primar'>Onde estamos?</p>
      <p className='text-lg'>
       Estamos localizados em todo o estado de São Paulo, oferecendo nossos serviços com eficiência e qualidade. Nossa abrangência nos permite atender
       clientes em todas as regiões do estado, garantindo suporte e soluções tecnológicas de ponta onde quer que estejam. Além disso, expandimos nossa
@@ -38,7 +38,7 @@ const AboutUs = () => {
      </p>
     </div>
     <div className='flex flex-col gap-2'>
-     <p className='text-3xl font-bold text-primar'>Parceria Intelbras</p>
+     <p className='text-3xl max-md:text-2xl font-bold text-primar'>Parceria Intelbras</p>
      <p className='text-lg'>
       Temos o orgulho de ser autorizados e certificados pela Intelbras, uma das principais referências em soluções tecnológicas no Brasil. Essa
       certificação confirma nosso compromisso com a qualidade, a inovação e a excelência em todos os nossos serviços e produtos.
@@ -55,7 +55,7 @@ const AboutUs = () => {
      </p>
     </div>
     <div className='flex flex-col gap-2'>
-     <p className='text-3xl font-bold text-primar'>Missão Valores e Política</p>
+     <p className='text-3xl max-md:text-2xl font-bold text-primar'>Missão Valores e Política</p>
      <p className='text-lg'>
       Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it
       over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
