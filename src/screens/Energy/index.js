@@ -12,14 +12,14 @@ const Energy = () => {
  return (
   <div className='bg-primar/10'>
    <Header />
-   <div className='h-96 flex flex-col justify-center items-start gap-16 pt-32 bg-energy bg-cover bg-center'>
-    <div className='h-full w-1/3 flex items-center justify-center bg-black/50 rounded-sm'>
+   <div className='h-96 flex flex-col justify-center items-start gap-16 pt-32 max-md:pt-20 bg-energy bg-cover bg-center'>
+    <div className='h-full w-1/3 max-md:w-full flex items-center justify-center bg-black/50 rounded-sm'>
      <p className='text-white text-4xl font-bold flex justify-center'>Energia</p>
     </div>
    </div>
-   <div className='flex items-center'>
+   <div className='flex items-center max-md:flex-col'>
     <div
-     className='w-1/2 h-96 flex items-end justify-center bg-solar2 bg-cover bg-center'
+     className='w-1/2 max-md:w-full h-96 flex items-end justify-center bg-solar2 bg-cover bg-center'
      onMouseEnter={() => {
       setIntercom(true);
      }}
@@ -39,7 +39,7 @@ const Energy = () => {
      </div>
     </div>
     <div
-     className='w-1/2 h-96 flex items-end justify-center bg-changer bg-cover bg-top'
+     className='w-1/2 max-md:w-full h-96 flex items-end justify-center bg-changer bg-cover bg-top'
      onMouseEnter={() => {
       setCam(true);
      }}

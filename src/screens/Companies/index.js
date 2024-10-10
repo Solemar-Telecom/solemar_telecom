@@ -12,14 +12,14 @@ const Companies = () => {
  return (
   <div className='bg-primar/10'>
    <Header />
-   <div className='h-96 flex flex-col justify-center items-start gap-16 pt-32 bg-companies bg-cover bg-center'>
-    <div className='h-full w-1/3 flex items-center justify-center bg-black/50 rounded-sm'>
+   <div className='h-96 flex flex-col justify-center items-start gap-16 pt-32 max-md:pt-20 bg-companies bg-cover bg-center'>
+    <div className='h-full w-1/3 max-md:w-full flex items-center justify-center bg-black/50 rounded-sm'>
      <p className='text-white text-4xl font-bold flex justify-center'>Empresas</p>
     </div>
    </div>
-   <div className='flex items-center'>
+   <div className='flex items-center max-md:flex-col'>
     <div
-     className='w-1/4 h-96 flex items-end justify-center bg-clound bg-cover bg-center'
+     className='w-1/4 max-md:w-full h-96 flex items-end justify-center bg-clound bg-cover bg-center'
      onMouseEnter={() => {
       setIntercom(true);
      }}
@@ -39,7 +39,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center bg-cabes3 bg-cover bg-center'
+     className='w-1/4 max-md:w-full h-96 flex items-end justify-center bg-cabes3 bg-cover bg-center'
      onMouseEnter={() => {
       setCam(true);
      }}
@@ -59,7 +59,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center bg-fleet bg-cover bg-center'
+     className='w-1/4 max-md:w-full h-96 flex items-end justify-center bg-fleet bg-cover bg-center'
      onMouseEnter={() => {
       setSoftware(true);
      }}
@@ -79,7 +79,7 @@ const Companies = () => {
      </div>
     </div>
     <div
-     className='w-1/4 h-96 flex items-end justify-center bg-faceRander2 bg-cover bg-center'
+     className='w-1/4 max-md:w-full h-96 flex items-end justify-center bg-faceRander2 bg-cover bg-center'
      onMouseEnter={() => {
       setControl(true);
      }}
