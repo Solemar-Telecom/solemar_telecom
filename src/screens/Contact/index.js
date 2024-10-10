@@ -92,13 +92,13 @@ const Contact = () => {
    <Header />
    <div className='bg-form bg-cover bg-center'>
     <div className='h-60 flex flex-col justify-center items-start gap-16 pt-16'>
-     <div className='h-full w-full flex items-center justify-start pl-32 pt-4 bg-black/50 rounded-sm'>
+     <div className='h-full w-full flex items-center justify-start pl-32 max-md:pl-5 pt-4 bg-black/50 rounded-sm'>
       <p className='text-white text-4xl font-bold'>Estamos aqui para te ajudar</p>
      </div>
     </div>
-    <div className='py-14 px-32 flex gap-10'>
-     <div className='w-1/2'></div>
-     <form onSubmit={handleSubmit(postForm)} className='flex flex-col items-center p-4 w-1/2 bg-white/50  rounded-md'>
+    <div className='py-14 max-md:px-5 px-32 flex gap-10'>
+     <div className='w-1/2 max-md:hidden'></div>
+     <form onSubmit={handleSubmit(postForm)} className='flex flex-col items-center p-4 w-1/2 max-md:w-full bg-white/50  rounded-md'>
       <Input
        label='Nome Completo'
        name='name'
@@ -109,12 +109,12 @@ const Contact = () => {
        }}
        error={errors.name}
       />
-      <div className='w-full flex items-center gap-4'>
+      <div className='w-full flex max-md:flex-col items-center max-md:gap-0 min-[768px]:gap-4'>
        <Input
         label='E-mail'
         name='email'
         control={control}
-        placeholder='Insira o e-mail'
+        placeholder='Insira o seu e-mail'
         rules={{
          required: 'Campo obrigatório!',
          pattern: {
@@ -139,7 +139,7 @@ const Contact = () => {
         error={errors.celphone}
        />
       </div>
-      <div className='w-full flex items-center gap-4'>
+      <div className='w-full flex max-md:flex-col items-center max-md:gap-0 min-[768px]:gap-4'>
        <Input
         label='CEP'
         name='CEP'
@@ -193,7 +193,7 @@ const Contact = () => {
        error={errors.message}
       />
       <Button
-       name='Login'
+       name='Enviar'
        disabled={disabled}
        loading={load}
        width={'w-full'}
